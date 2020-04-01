@@ -26,6 +26,7 @@ class PDFInfo
     public $optimized;
     public $PDFVersion;
     public $keywords;
+    public $subject;
 
     public static $bin;
 
@@ -89,6 +90,7 @@ class PDFInfo
         $this->PDFVersion = $this->parse('PDF version');
         $this->pageRot = $this->parse('Page rot');
         $this->keywords = $this->parse('Keywords');
+        $this->subject = $this->parse('Subject');
     }
 
     private function parse($attribute)
